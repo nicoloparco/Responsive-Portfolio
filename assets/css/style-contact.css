@@ -6,9 +6,10 @@
 
 nav {
     float:right;
-    background-color: white;
     align-items: center; 
+    background-color: white;
 }
+
 
 .logo {
     float:left;
@@ -98,15 +99,32 @@ button {
    
 }
 
-@media screen and (max-width:980px){
-    body {width:980px};
+@media (max-width:768px){
+    #main-info{
+        margin:100px;
+    }
+    .logo {
+        margin-left:20px;
+    }
+    
 }
-@media screen and (max-width:768px){
-    body {width:768px};
-    header {width:768};
-}
-@media screen and (max-width:640px){
-    body {width:640px};
-    header {position:static};
-    nav {position:static};
+
+@media (max-width:640px) {
+    #main-info{
+        margin: 100px;
+    }
+    nav {
+        justify-content: center;
+        width: 100%;
+        margin: none;
+        padding: none;
+    }
+    .links {
+        padding: none;
+        margin: none;
+        justify-content: center;
+    }
+    .logo {
+        width: 100%;
+    }
 }
